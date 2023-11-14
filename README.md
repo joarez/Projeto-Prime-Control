@@ -28,5 +28,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
   * Python instalado
   * Robot Framework instalado
   * RequestsLibrary (Robot)
-  * JSONLibrary
+  * JSONLibrary.
+    
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com)

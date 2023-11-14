@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231113 21:12:21.872" rpa="false" schemaversion="4">
+<suite id="s1" name="Cadastro Edicao" source="C:\Users\joare\OneDrive\Documentos\PrimeControl\Site\Tests\Cadastro_Edicao.robot">
+<test id="s1-t1" name="Caso de Teste 1: Realizar a alteração de informações do cadastro" line="8">
+<kw name="Abrir Site" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231113 21:12:22.403" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20231113 21:12:22.403" endtime="20231113 21:12:38.482"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:22.403" endtime="20231113 21:12:38.482"/>
+</kw>
+<kw name="Dado que o usuário esteja no site" library="RobotWeb">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231113 21:12:38.482" endtime="20231113 21:12:38.604"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:38.482" endtime="20231113 21:12:38.605"/>
+</kw>
+<kw name="E clicar em “My Info”" library="RobotWeb">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TXT_Logina}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:38.606" endtime="20231113 21:12:39.518"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input_Usuario}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:39.518" endtime="20231113 21:12:39.538"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Usuario}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:39.538" level="INFO">Clicking element '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:39.538" endtime="20231113 21:12:39.588"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Usuario}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:39.588" level="INFO">Typing text 'Admin' into text field '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:39.588" endtime="20231113 21:12:39.653"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Pass_Word}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:39.654" level="INFO">Clicking element '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:39.653" endtime="20231113 21:12:39.696"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Pass_Word}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:39.698" level="INFO">Typing text 'admin123' into text field '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:39.696" endtime="20231113 21:12:39.751"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231113 21:12:39.890" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login.png"&gt;&lt;img src="Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231113 21:12:39.751" endtime="20231113 21:12:39.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:39.891" level="INFO">Clicking element '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20231113 21:12:39.891" endtime="20231113 21:12:39.933"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231113 21:12:42.934" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231113 21:12:39.933" endtime="20231113 21:12:42.934"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:38.605" endtime="20231113 21:12:42.934"/>
+</kw>
+<kw name="E Realizar o preenchimento do campos com dados aleatórios" library="RobotWeb">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Edição_Cadastro.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231113 21:12:43.160" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Edi%C3%A7%C3%A3o_Cadastro.png"&gt;&lt;img src="Edi%C3%A7%C3%A3o_Cadastro.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231113 21:12:42.934" endtime="20231113 21:12:43.160"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn_PIM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:43.160" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20231113 21:12:43.160" endtime="20231113 21:12:44.020"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(1700,200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20231113 21:12:44.021" level="INFO">Executing JavaScript:
+window.scrollTo(1700,200)
+Without any arguments.</msg>
+<status status="PASS" starttime="20231113 21:12:44.020" endtime="20231113 21:12:44.029"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EditNome}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:44.029" endtime="20231113 21:12:44.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EditNome}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:44.898" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[9]/div/button[2]/i'.</msg>
+<status status="PASS" starttime="20231113 21:12:44.898" endtime="20231113 21:12:45.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231113 21:12:47.616" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231113 21:12:45.615" endtime="20231113 21:12:47.616"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${Employee_ Name}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:47.616" level="INFO">Double clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:47.616" endtime="20231113 21:12:47.932"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Employee_ Name}</arg>
+<arg>${Nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:47.934" level="INFO">Typing text 'Prime Control' into text field '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:47.933" endtime="20231113 21:12:48.037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EditAplelido}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:48.037" endtime="20231113 21:12:48.057"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EditAplelido}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:48.057" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div[2]/div/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:48.057" endtime="20231113 21:12:48.097"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EditAplelido}</arg>
+<arg>${Apelido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:48.097" level="INFO">Typing text 'Juca Bala' into text field '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div[2]/div/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20231113 21:12:48.097" endtime="20231113 21:12:48.156"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>EdiçãoCadastro.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231113 21:12:48.316" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Edi%C3%A7%C3%A3oCadastro.png"&gt;&lt;img src="Edi%C3%A7%C3%A3oCadastro.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231113 21:12:48.156" endtime="20231113 21:12:48.316"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,1500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20231113 21:12:48.328" level="INFO">Executing JavaScript:
+window.scrollTo(0,1500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20231113 21:12:48.316" endtime="20231113 21:12:48.337"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:42.934" endtime="20231113 21:12:48.337"/>
+</kw>
+<kw name="E Realizar a add de um anexo" library="RobotWeb">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Anexo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:48.337" endtime="20231113 21:12:48.359"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Anexo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:48.359" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[3]/div[1]/div/button'.</msg>
+<status status="PASS" starttime="20231113 21:12:48.359" endtime="20231113 21:12:48.399"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:48.337" endtime="20231113 21:12:48.399"/>
+</kw>
+<kw name="Quando clicar em “Save” de cada etapa" library="RobotWeb">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BtnSalvar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231113 21:12:48.401" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/form/div[2]/button'.</msg>
+<status status="PASS" starttime="20231113 21:12:48.400" endtime="20231113 21:12:48.442"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:48.400" endtime="20231113 21:12:48.442"/>
+</kw>
+<kw name="Então o sistema deve apresentar a mensagem “Success – Successfully save”" library="RobotWeb">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Mensagem}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231113 21:12:48.442" endtime="20231113 21:12:48.899"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231113 21:12:49.900" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231113 21:12:48.899" endtime="20231113 21:12:49.900"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>Successfully save.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231113 21:12:50.030" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Successfully%20save.png"&gt;&lt;img src="Successfully%20save.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231113 21:12:49.900" endtime="20231113 21:12:50.030"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:48.442" endtime="20231113 21:12:50.030"/>
+</kw>
+<status status="PASS" starttime="20231113 21:12:22.403" endtime="20231113 21:12:50.030"/>
+</test>
+<status status="PASS" starttime="20231113 21:12:21.888" endtime="20231113 21:12:50.046"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cadastro Edicao">Cadastro Edicao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,9 +1,7 @@
-# Projeto Prime Control
-
-## Automatizando API com Robot Framework
+# Automatizando API com Robot Framework
  Sobre
 
- 1° - Validar o campo Status Code (Resultado esperado deve ser 200)
+ #1° - Validar o campo Status Code (Resultado esperado deve ser 200)
  2° - Validar se o campo idade consta no ResponseBody (Resultado esperado deve ser Sucesso)
  3° - Validar se o valor do campo sexo do ResponseBody é igual a Masculino (Resultado esperado deve ser Sucesso)
  4° - Validar se o valor do campo sexo do ResponseBody é igual a Feminino (Resultado esperado deve ser Falha)

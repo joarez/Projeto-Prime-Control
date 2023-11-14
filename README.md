@@ -17,8 +17,8 @@
   Library         JSONLibrary    
   Library         Collections
 
-* [Pre Requisitos](#pre-requisitos)
-* * [Tecnologias](#tecnologias)
+* [Pre Requisitos](#pre-requisitos) [Tecnologias](#tecnologias)
+
   Python instalado
   Robot Framework instalado
   RequestsLibrary (Robot)

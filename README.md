@@ -1,3 +1,9 @@
+# Automação de Testes de Interface do Usuário (UI)
+O teste de interface do usuário (UI) serve para garantir que todos os itens de uma tela funcionem adequadamente, analisando a interação de um aplicativo, site ou programa com o usuário final. O teste de UI inclui quatro critérios específicos: 
+* Facilidade de uso,
+* Consistência e lógica,
+* Acessibilidade e compatibilidade.
+
 # Automatizando API com Robot Framework
  Sobre
  * 1° - Validar o campo Status Code (Resultado esperado deve ser 200)
